@@ -1,5 +1,6 @@
 package org.launchcode.java.demos.lsn2controlflowandcollections;
 
+import javax.print.DocFlavor;
 import java.util.Scanner;
 
 public class ArrayGradebook {
@@ -47,6 +48,10 @@ public class ArrayGradebook {
 
         double avg = sum / numStudents;
         System.out.println("Average grade: " + avg);
+        for (String student : students) {
+            System.out.println(student);
+        }
+
     }
 
 }
