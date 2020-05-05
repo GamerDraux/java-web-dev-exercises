@@ -1,4 +1,4 @@
-package org.launchcode.java.exercises;
+package org.launchcode.java.exercises.Chapter3;
 
 import java.util.*;
 

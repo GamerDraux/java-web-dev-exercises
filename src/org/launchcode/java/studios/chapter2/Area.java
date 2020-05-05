@@ -1,4 +1,6 @@
-package org.launchcode.java.areaofacircle;
+package org.launchcode.java.studios.chapter2;
+
+import org.launchcode.java.studios.chapter2.Circle;
 
 import java.util.Scanner;
 

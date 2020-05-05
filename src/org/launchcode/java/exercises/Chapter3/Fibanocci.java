@@ -1,4 +1,4 @@
-package org.launchcode.java.exercises;
+package org.launchcode.java.exercises.Chapter3;
 
 public class Fibanocci {
     public static void main(String[] args){
