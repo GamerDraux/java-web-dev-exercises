@@ -7,8 +7,7 @@ import org.launchcode.java.demos.lsn5unittesting.main.Car;
 
 
 import static junit.framework.TestCase.fail;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 
 public class CarTest {
     Car test_car;
@@ -30,14 +29,9 @@ public class CarTest {
 
     @Test
     public void testInitialGasTank() {
-        assertTrue (10==test_car.getGasTankLevel());
+        assertEquals(10, test_car.getGasTankLevel(), 0.001);
     }
 
-    private void assertTrue(boolean b) {
-    }
-
-    private void assertFalse(boolean b) {
-    }
     //TODO: gasTankLevel is accurate after driving within tank range
 
     @Test
@@ -48,7 +42,7 @@ public class CarTest {
     //TODO: gasTankLevel is accurate after attempting to drive past tank range
     @Test
     public void testGasTankAfterExceedingTankRange(){
-        test_car.drive(550);
+        test_car.drive(10000);
         assertEquals(0, test_car.getGasTankLevel(), .001);
     }
 
