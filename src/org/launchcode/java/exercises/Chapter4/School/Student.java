@@ -3,6 +3,7 @@ package org.launchcode.java.exercises.Chapter4.School;
 // Start working here with your Student class.
 // To instantiate the Student class, add your code to the main in the file, SchoolPractice.
 
+
 public class Student {
 
 //    fields
@@ -11,6 +12,7 @@ public class Student {
     private int studentId;
     private int numberOfCredits;
     private double gpa;
+
 
 //    Constructors
     public Student(String name, int studentId,
@@ -58,6 +60,8 @@ public class Student {
     public double getGPA(){
         return gpa;
     }
+
+
     private void setGPA(double aGPA){
         gpa = aGPA;
     }
